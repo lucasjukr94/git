@@ -1,0 +1,30 @@
+configuração IIS
+-procurar por inetmgr -> Gerenciador do Serviços de Informações da Internet(IIS)
+-adicionar site -> definir nome,IP,porta,caminho físico
+-Iniciar
+
+Erro:
+1)Tentar baixar o rewrite module. Caso de erro 500.19, tem que ter licença da microsoft.
+2)Tentar botão direito no site -> Gerenciar site -> configurações avançadas -> ASP.NET v4.0
+3)Adicionar IIS_IUSRS (lotestx8\IIS_IUSRS) - no parent folder, dar permissões, ou outro usuário que tem no root e não tem no folder com caminho escolhido
+
+refs:
+1)https://docs.microsoft.com/en-us/previous-versions/bb763170%28v%3dvs.140%29
+2)https://docs.microsoft.com/en-us/previous-versions/33487zw6%28v%3dvs.140%29
+3)https://docs.microsoft.com/en-us/previous-versions/zwk103ab(v=vs.140)
+
+
+-IPv4 público: 177.102.141.14(04/04/2019) - http://ip4.me/ => ou roteador - modem IP Address
+
+ref:
+1)https://www.howtogeek.com/117371/how-to-find-your-computers-private-public-ip-addresses/
+
+quotes:
+	"You should also know that unlike street addresses, 
+	IP addresses aren’t necessarily fixed. 
+	Unless you’ve purchased a static address from them, 
+	your ISP(Internet Service Provider) may occasionally assign you a new public IP address. 
+	And, unless you’ve configured static IP address assignments for your local devices, 
+	your router may occasionally assign your devices new IP addresses."
+	
+	
